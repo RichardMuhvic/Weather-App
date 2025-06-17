@@ -1,0 +1,123 @@
+/*---colors---
+blue : ##2d3544
+cream blue : ##e0e7ef
+*/
+
+
+body {
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #e0e7ef;
+    color: #2d3544;
+
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 100%;
+    margin: 0;
+}
+
+main{
+    width: 80%;
+    height: 80%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+img {
+    filter: invert(16%) sepia(45%) saturate(334%) hue-rotate(181deg) brightness(102%) contrast(91%);
+    height: 25px;
+}
+
+
+#localisation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 30px;
+}
+#localisation h2, #localisation p{
+    margin: 1px;
+}
+
+
+#meteo_day{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+#meteo_day img, #meteo_day h1, #meteo_day h3{
+    margin: 1px;
+}
+#meteo_day img{
+    width: 60px;
+    height: auto;
+    margin: 10px;
+}
+#meteo_day h1{
+    font-size: 4em;
+    margin: 10px;
+}
+#meteo_day h3{
+    font-weight: 400;
+    margin: 10px;
+}
+
+
+#wind_day{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+#wind_day p{
+    margin: 6px;
+}
+.wind_metric{
+    display: flex;
+    align-items: center;
+}
+.wind_metric img, .wind_metric p{
+    margin: 1px;
+}
+
+
+#meteo_hebdo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5px;
+    padding: 40px;
+}
+.meteo_news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 5px;
+}
+.meteo_news p{
+    margin: 5px;
+    width: 100px;
+}
+.meteo_news p:nth-of-type(2){
+    text-align: end;
+}
+.meteo_news img{
+
+}
