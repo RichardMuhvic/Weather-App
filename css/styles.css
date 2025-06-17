@@ -2,21 +2,33 @@
 blue : ##2d3544
 cream blue : ##e0e7ef
 */
-
+body.light-mode{
+    background-color: #e0e7ef;
+    color: #2d3544;
+}
+body.dark-mode{
+    background-color: #2d3544;
+    color: #e0e7ef;
+}
+#toggle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#toggle img{
+    width: 20px;
+    height: auto;
+}
 
 body {
     font-family: "Gabarito", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background-color: #e0e7ef;
-    color: #2d3544;
-
     display: flex;
     align-items: center;
     align-content: space-between;
     justify-content: center;
     flex-direction: column;
-
     height: 100%;
     margin: 0;
 }

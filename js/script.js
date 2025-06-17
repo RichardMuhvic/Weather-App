@@ -26,10 +26,26 @@ requete.onload = function() {
         }
     }
 }
-//Actualiser la météo toutes les 5 secondes.
 
 //meteo_day img : Changer l'icon (nuage, soleil, orage, pluie) en fonction de la météo annoncée
 
 //meteo_hebdo : Actualiser automatique la météo, les dates des 4 prochains jours
 
 //Ajouter un bouton pour passer en mode sombre.
+
+//Dark/light toggle mode :
+const toggleBtn = document.querySelector('#toggle');
+const body = document.body;
+
+body.classList.add('light-mode');
+
+toggleBtn.addEventListener('click', () => {
+    if(body.classList.contains('light-mode')) {
+        body.classList.replace('light-mode', 'dark-mode');
+        toggleBtn.textContent = 'Light';
+    }
+    else {
+        body.classList.replace('dark-mode','light-mode');
+        toggleBtn.textContent = 'Dark';
+    }
+})
